@@ -139,3 +139,7 @@ cython_debug/
 
 # Jetbrains
 .idea/
+
+# Arkadiusz' cruft
+.notes.md
+tasks.py
