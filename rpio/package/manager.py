@@ -11,7 +11,7 @@ from pathlib import Path
 
 class PackageManager(object):
 
-    def __init__(self, name='PackageManager',description='Build-in package manager',verbose=False):
+    def __init__(self, name='PackageManager',description='Built-in package manager',verbose=False):
         """Initialize a Package Manager component.
 
                 Parameters
