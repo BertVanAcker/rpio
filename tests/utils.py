@@ -4,9 +4,9 @@ import shutil
 
 
 class TemporaryTemplatedPath:
-    def __init__(self, template_file_path: Path | None, extraction_path: Path, remove_after_completion: bool = True):
-        self.template_file_path = template_file_path
-        self.extraction_path = extraction_path
+    def __init__(self, template_file_path: Path | str | None, extraction_path: Path | str, remove_after_completion: bool = True):
+        self.template_file_path = Path(template_file_path) if isinstance(template_file_path, str) else template_file_path
+        self.extraction_path = extraction_path if isinstance(extraction_path, Path) else Path(extraction_path)
         self.remove_after_completion = remove_after_completion
 
     def __enter__(self):
