@@ -13,3 +13,4 @@ def test_package():
         assert package_path.is_dir()
         assert (package_path / "Realization/ManagedSystem/Actions/deploy.py").is_file() # Random spotcheck
         assert package_manager.check(str(package_path))
+        assert package_manager.check(package_path)
