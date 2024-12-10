@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 import paho.mqtt.client as mqtt
 import yaml
 import redis
+import importlib
 
 
 def getCustomCode(text,tag):
@@ -373,3 +374,10 @@ def check_mqtt(broker="localhost", port=1883, timeout=30,config=None):
         print(f"Could not connect to MQTT broker: {e}")
 
     return client.reachable
+
+def check_package_installation(package="robosapiensio"):
+    try:
+        importlib.import_module(package)
+        return True
+    except ImportError:
+        return False

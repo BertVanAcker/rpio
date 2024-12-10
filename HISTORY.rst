@@ -88,3 +88,9 @@ robosapiensIO Preview
 
 * Update swc2main
 * swc2code updated (user todo added)
+
+0.3.21 (2024-12-10)
+~~~~~~~~~~~~~~~~~~
+
+* Update the client library to read from configs
+* write-knowledge based on messages
