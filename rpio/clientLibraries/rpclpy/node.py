@@ -3,9 +3,9 @@ import logging
 import json
 import uuid
 from datetime import datetime
-from rpclpy.CommunicationManager import CommunicationManager
-from rpclpy.KnowledgeManager import KnowledgeManager
-from rpclpy.LoggingAndTracking import LoggingAndTrackingHandler
+from rpio.clientLibraries.rpclpy.CommunicationManager import CommunicationManager
+from rpio.clientLibraries.rpclpy.KnowledgeManager import KnowledgeManager
+from rpio.clientLibraries.rpclpy.LoggingAndTracking import LoggingAndTrackingHandler
 
 # ---------------------------------------------------------------------------
 # Configuration Keys

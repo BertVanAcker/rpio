@@ -116,3 +116,7 @@ robosapiensIO Preview
 * Support faster logging protocol in logging and tracking_redis
 * Integrate first version of the trustworthiness checker (MQTT)
 * Support faster communication for the trustworthiness checker (MQTT)
+
+0.4.1 (2025-07-25)
+~~~~~~~~~~~~~~~~~~
+* Debug the node dependencies
