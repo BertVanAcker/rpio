@@ -117,6 +117,7 @@ robosapiensIO Preview
 * Integrate first version of the trustworthiness checker (MQTT)
 * Support faster communication for the trustworthiness checker (MQTT)
 
-0.4.1 (2025-07-25)
+0.4.2 (2025-07-25)
 ~~~~~~~~~~~~~~~~~~
-* Debug the node dependencies
+* Update node
+* Add support for the node dependencies in the communication manager
