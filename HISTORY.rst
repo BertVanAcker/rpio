@@ -121,3 +121,7 @@ robosapiensIO Preview
 ~~~~~~~~~~~~~~~~~~
 * Update node
 * Add support for the node dependencies in the communication manager
+
+0.4.3 (2025-07-28)
+~~~~~~~~~~~~~~~~~~
+* Update logging on redis and add decorator for logging
