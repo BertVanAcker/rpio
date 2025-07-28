@@ -30,7 +30,7 @@ class RedisLoggingHandler(logging.Handler):
     def emit(self, record):
         try:
             log_entry = self.format(record)
-            self.redis_client.publish(self.channel, log_entry)
+            self.redis_client.lpush(self.channel, log_entry)
         except Exception:
             self.handleError(record)
 
