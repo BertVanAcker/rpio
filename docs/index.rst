@@ -5,7 +5,7 @@
 
 robosapiensIO documentation
 ============================
-.. image:: assets/banner.png
+.. image:: assets/RoboSapiensBanner.png
   :width: 800
   :alt: banner
 
@@ -40,3 +40,8 @@ Miscellaneous
     features/history
     features/supported-features
     gettingStarted/tutorials/validation
+
+ACKNOWLEDGEMENTS
+-------------
+The work presented here is supported by the RoboSAPIENS project funded by the European Commission’s
+Horizon Europe programme under grant agreement number 101133807
