@@ -1,0 +1,52 @@
+/* Custom CSS to make Read the Docs theme wider */
+
+/* Remove the max-width constraint on the main content area */
+.wy-nav-content {
+    max-width: none !important;
+}
+
+/* Make the content area use more of the available width */
+.wy-nav-content-wrap {
+    margin-left: 300px;
+}
+
+/* Adjust the sidebar width if needed */
+.wy-nav-side {
+    width: 300px;
+}
+
+/* Make the content area responsive and use more screen width */
+@media screen and (min-width: 1400px) {
+    .wy-nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .wy-nav-content {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .wy-nav-content {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* Ensure tables and code blocks can use the full width */
+.rst-content table.docutils {
+    width: 100%;
+}
+
+.rst-content .highlight {
+    margin: 1em 0;
+}
+
+/* Improve readability with better line height for wider content */
+.rst-content {
+    line-height: 1.6;
+}
