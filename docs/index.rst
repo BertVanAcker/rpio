@@ -1,10 +1,5 @@
 .. RoboSAPIENS IO Project documentation masterACKNOWLEDGEMENTS
 ================
-The work presented here is supported by the RoboSAPIENS project funded by the European Commission's
-Horizon Europe programme under grant agreement number 101133807.e, created by
-   sphinx-quickstart on Tue Oct 29 22:52:46 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 robosapiensIO documentation
 ============================
