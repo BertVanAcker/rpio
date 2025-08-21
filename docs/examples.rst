@@ -7,7 +7,7 @@ Official Examples
 .. toctree::
     :maxdepth: 1
 
-    gettingStarted/tutorials/helloworldExamples/helloworld/index
+    gettingStarted/tutorials/helloworldExamples/helloworld
 
 Validation Matrix
 -----------------

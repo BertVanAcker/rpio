@@ -36,7 +36,7 @@ Example Projects
 
 * **hello world**: Basic example implementation
 * **hello worldv2**: Enhanced version with additional features  
-* **hello worldv3**: Advanced version with full feature set
+* **Distributed Deployment**: Advanced version with full feature set
 * **NTNU**: Real-world case study implementation
 
 Testing Framework

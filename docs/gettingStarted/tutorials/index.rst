@@ -2,18 +2,18 @@ Tutorials and Examples
 ======================
 
 Examples
---------
+----------------
 
 .. toctree::
    :maxdepth: 1
 
-   helloworldExamples/helloworld/index
+   helloworldExamples/helloworld
+   helloworldExamples/distributed-deployment
 
-Tutorials
----------
+
 
 Beginner Tutorials
-~~~~~~~~~~~~~~~~~~
+-----------------
 
 .. toctree::
    :maxdepth: 2
@@ -22,12 +22,23 @@ Beginner Tutorials
    CLI/Beginner-CLI-Tools
 
 Workflow Tutorials
-~~~~~~~~~~~~~~~~~~
+-----------------
 
 .. toctree::
    :maxdepth: 2
 
    workflows/index_workflows
+
+Component Tutorials
+-------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   components/dashboard
+   components/simulator
+   components/orchestrator
+   components/trustworthiness-checker
 
 Validation
 ----------
