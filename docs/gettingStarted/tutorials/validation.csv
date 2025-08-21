@@ -1,4 +1,4 @@
-Level,Group,Feature,hello world,hello worldv2 ,hello worldv3, NTNU
+Level,Group,Feature,hello world,hello worldv2 ,Distributed Deployment, NTNU
 **Architecture**,**Knowledge manager**,r/w data,|ok|,|ok|,|ok|,|ok|
 ,,r/w event,|ok|,|ok|,|ok|,|ok|
 ,,r/w historical data,|nok|,|nok|,|nok|,|nok|

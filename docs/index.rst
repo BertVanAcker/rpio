@@ -1,4 +1,7 @@
-.. RoboSAPIENS IO Project documentation master file, created by
+.. RoboSAPIENS IO Project documentation masterACKNOWLEDGEMENTS
+================
+The work presented here is supported by the RoboSAPIENS project funded by the European Commission's
+Horizon Europe programme under grant agreement number 101133807.e, created by
    sphinx-quickstart on Tue Oct 29 22:52:46 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -13,35 +16,39 @@ This repository provides a flexible software architecture framework for building
 
 Social: `LinkedIn <https://www.linkedin.com/company/robosapiens-eu/>`_ | `Website <https://robosapiens-eu.tech/>`_
 
-Content
--------
+.. toctree::
+   :maxdepth: 2
+   :caption: Overview
+
+   what-is-robosapiensio
 
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 2
+   :caption: Getting Started
 
-    what-is-robosapiensio
-
-
-Getting Started
----------------
+   gettingStarted/installation/index
 
 .. toctree::
-    :maxdepth: 1
+   :maxdepth: 2
+   :caption: Tutorials & Examples
 
-    gettingStarted/installation/index
-    gettingStarted/tutorials/index
-
-Miscellaneous
--------------
+   gettingStarted/tutorials/index
 
 .. toctree::
-    :maxdepth: 1
+   :maxdepth: 1
+   :caption: Publications
 
-    features/history
-    features/supported-features
-    gettingStarted/tutorials/validation
+   publications
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Reference
+
+   features/history
+   features/supported-features
+   gettingStarted/tutorials/validation
 
 ACKNOWLEDGEMENTS
--------------
+----------------
 The work presented here is supported by the RoboSAPIENS project funded by the European Commission’s
 Horizon Europe programme under grant agreement number 101133807
