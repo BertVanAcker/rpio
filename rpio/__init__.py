@@ -19,7 +19,7 @@ __description__ = (
 __url__ = "https://rpio.readthedocs.io/en/latest/index.html"
 
 __author__ = "Sahar Nasimi Nezhad & Bert Van Acker"
-__email__ = "bert.vanacker@uantwerpen.be"
+__email__ = "sahar.nasiminezhad@uantwerpen.be & bert.vanacker@uantwerpen.be"
 
-__license__ = "Apache License 2.0"
-__copyright__ = "Copyright 2024"
+__license__ = "Into-CPS License"
+__copyright__ = "Copyright 2025 The INTO-CPS Association"
