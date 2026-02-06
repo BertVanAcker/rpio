@@ -5,7 +5,7 @@ sys.path.append(str(Path("..").resolve()))
 
 html_favicon = "static/images/docs-logo.svg"
 
-project = "RoboSAPIENS IO Project"
+project = "RoboSAPIENS IO"
 ogp_site_name = project
 copyright = f"{datetime.now().year}"
 author = "Sahar Nasimi Nezhad, Bert Van Acker, Arkadiusz Ryś"
@@ -36,7 +36,6 @@ source_suffix = {
 source_encoding = "utf-8-sig"
 master_doc = "index"
 
-templates_path = ["templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {

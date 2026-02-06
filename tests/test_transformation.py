@@ -3,7 +3,6 @@ from pathlib import Path
 import rsio.package.manager
 import rsio.parsers.parsers
 from rsio.metamodels.aadl2il import System
-from rsio.transformations.transformations import robochart2aadlmessages
 from tests.utils import TemporaryTemplatedPath
 
 
