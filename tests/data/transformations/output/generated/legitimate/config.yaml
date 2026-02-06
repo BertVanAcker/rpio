@@ -1,0 +1,21 @@
+logger:
+  endpoints:
+    - endpoint:
+        type: "logging"
+        name: "RemoteLog"
+        class: "LogMessage"
+        topic: "/RemoteLog"
+        QoS: 10
+
+knowledgeIn:
+  properties:
+
+knowledgeOut:
+  properties:
+
+eventIn:
+  properties:
+
+eventOut:
+  properties:
+
