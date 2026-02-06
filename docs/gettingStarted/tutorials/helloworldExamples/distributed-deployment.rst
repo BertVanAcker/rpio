@@ -3,7 +3,7 @@ Distributed Deployment
 
 **Repository:** `link <https://github.com/saharnn96/Helloworld_York_Demo.git>`_
 
-This tutorial demonstrates how to deploy RPIO components in a distributed architecture using the MAPLE-K (Monitor-Analysis-Plan-Execute-Knowledge) pattern. The example shows autonomous TurtleBot simulation with distributed microservices communicating through Redis messaging.
+This tutorial demonstrates how to deploy RSIO components in a distributed architecture using the MAPLE-K (Monitor-Analysis-Plan-Execute-Knowledge) pattern. The example shows autonomous TurtleBot simulation with distributed microservices communicating through Redis messaging.
 
 .. contents:: Table of Contents
    :depth: 2
@@ -12,7 +12,7 @@ This tutorial demonstrates how to deploy RPIO components in a distributed archit
 Overview
 ========
 
-This distributed deployment showcases RPIO's capability to orchestrate multiple containerized services across different nodes. The system uses:
+This distributed deployment showcases RSIO's capability to orchestrate multiple containerized services across different nodes. The system uses:
 
 - **MAPLE-K Architecture**: Monitor, Analysis, Plan, Execute components with Knowledge base
 - **Redis Messaging**: Asynchronous communication between distributed services
@@ -22,7 +22,7 @@ This distributed deployment showcases RPIO's capability to orchestrate multiple 
 
 **Key Components:**
 - Sensor monitoring service
-- ML-based analysis engine  
+- ML-based analysis engine
 - Path planning service
 - Motion execution service
 - Trust monitoring system
@@ -50,8 +50,8 @@ Setup and Deployment
 
 **2. Start the Distributed System**::
 
-   # Deploy all services 
-   docker-compose up --build 
+   # Deploy all services
+   docker-compose up --build
 
 **3. Access the System**:
 
@@ -62,7 +62,7 @@ Setup and Deployment
 System Components
 =================
 
-The distributed system consists of several RPIO components communicating through Redis:
+The distributed system consists of several RSIO components communicating through Redis:
 
 - **Monitor Service**: Collects sensor data from the TurtleBot simulation
 - **Analysis Service**: Processes sensor data using ML algorithms for anomaly detection
@@ -83,7 +83,7 @@ The system uses environment variables and YAML configuration files for distribut
    REDIS_HOST=localhost
    REDIS_PORT=6379
    REDIS_DB=0
-   
+
    # Service Configuration
    DASHBOARD_PORT=8050
    SIMULATION_PORT=8051
@@ -107,10 +107,10 @@ Monitoring and Troubleshooting
 
    # View all service status
    docker-compose ps
-   
+
    # Test Redis connectivity
    docker-compose exec redis redis-cli ping
-   
+
    # Monitor specific service
    docker-compose logs --tail=50 monitor
 
@@ -123,11 +123,11 @@ Monitoring and Troubleshooting
 Use Case Benefits
 =================
 
-This distributed deployment use case demonstrates several key RPIO capabilities:
+This distributed deployment use case demonstrates several key RSIO capabilities:
 
 **Scalability**: Components can be scaled independently based on workload demands
 
-**Fault Tolerance**: Individual service failures don't affect the entire system  
+**Fault Tolerance**: Individual service failures don't affect the entire system
 
 **Modularity**: Each MAPLE-K component is independently deployable and maintainable
 
@@ -137,4 +137,4 @@ This distributed deployment use case demonstrates several key RPIO capabilities:
 
 **Multi-node Support**: Architecture easily extends to true distributed deployment across multiple machines
 
-This example showcases how RPIO enables building robust, scalable robotics systems using modern distributed architecture patterns.
+This example showcases how RSIO enables building robust, scalable robotics systems using modern distributed architecture patterns.

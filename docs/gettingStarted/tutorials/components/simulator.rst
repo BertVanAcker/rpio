@@ -25,7 +25,7 @@ Prerequisites
 - Python 3.7 or higher
 - Redis server (optional, for external communication)
 - Web browser (Chrome, Firefox, Safari, Edge)
-- Required packages: ``pip install dash dash-bootstrap-components plotly numpy paho-mqtt redis rpio``
+- Required packages: ``pip install dash dash-bootstrap-components plotly numpy paho-mqtt redis rsio``
 
 Getting Started
 ===============
@@ -108,7 +108,7 @@ User Interface
 **Map Visualization** (center):
 
 - Robot position (blue circle with "TurtleBot4" label)
-- Heading direction (blue arrow)  
+- Heading direction (blue arrow)
 - Planned trajectory (green dashed line)
 - Obstacles (red X markers)
 - **Interactive clicking** for navigation targets
@@ -318,7 +318,7 @@ Troubleshooting
 **Common Issues:**
 
 - **Port 8050 already in use**: Change the port in the Dash configuration or stop other applications using this port
-- **Redis connection failed**: Ensure Redis server is running if using external communication features  
+- **Redis connection failed**: Ensure Redis server is running if using external communication features
 - **Dashboard not loading**: Check that all dependencies are installed correctly
 - **LiDAR visualization issues**: Verify browser compatibility (Chrome/Firefox recommended)
 

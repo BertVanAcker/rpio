@@ -1,4 +1,3 @@
-
 Validation Matrix
 =================
 
@@ -35,7 +34,7 @@ Example Projects
 ----------------
 
 * **hello world**: Basic example implementation
-* **hello worldv2**: Enhanced version with additional features  
+* **hello worldv2**: Enhanced version with additional features
 * **Distributed Deployment**: Advanced version with full feature set
 * **NTNU**: Real-world case study implementation
 

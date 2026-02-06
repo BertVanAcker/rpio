@@ -3,7 +3,7 @@ robosapiensIO backend with Docker Tutorial
 ==========================================
 
 **Goal:** This tutorial will walk you through the steps to set up the robosapiensIO backend using Docker and Docker Compose.
-This can be used when manually running (e.g.using main.py) self-adaptive applications instead of the generated docker containers or for experimenting purpose.
+This can be used when manually running (e.g. using main.py) self-adaptive applications instead of the generated docker containers or for experimenting purpose.
 
 **Tutorial level:** Beginner
 
@@ -30,7 +30,7 @@ Prerequisites
 
 - **Git**: Make sure Git is installed on your machine. You can install it from `Git's official website <https://git-scm.com/downloads>`_.
 - **Docker**: Make sure Docker is installed and running on your machine. You can install it from `Docker's official website <https://docs.docker.com/get-docker/>`_.
-- **Docker compose**: Make sure Docker compose is installed and running on your machine. You can install it from `Docker's official website <https://docs.docker.com/compose/install/>`_.
+- **Docker Compose**: Make sure Docker Compose is installed and running on your machine. You can install it from `Docker Compose installation page <https://docs.docker.com/compose/install/>`_.
 
 Tasks
 -----
@@ -42,7 +42,7 @@ Tasks
    .. code-block:: bash
 
        git clone https://github.com/BertVanAcker/rpio-backend-docker.git
-       cd rpio-backend-docker
+       cd rsio-backend-docker
 
 2. **Start the services using Docker Compose**
 

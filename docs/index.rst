@@ -1,15 +1,13 @@
-.. RoboSAPIENS IO Project documentation masterACKNOWLEDGEMENTS
-================
-
 robosapiensIO documentation
-============================
-.. image:: assets/RoboSapiensBanner.png
+===========================
+.. image:: /static/images/banner.png
   :width: 800
   :alt: banner
 
 This repository provides a flexible software architecture framework for building self-adaptive, trustworthy robotic applications using the RoboSapiens Adaptive Platform. It includes modular building blocks for runtime adaptation, trustworthiness monitoring, and knowledge management, enabling the seamless deployment of adaptive systems in diverse environments. The platform supports both resource-constrained and high-performance computing setups, facilitating reliable, automated responses to changing operational conditions.
 
 Social: `LinkedIn <https://www.linkedin.com/company/robosapiens-eu/>`_ | `Website <https://robosapiens-eu.tech/>`_
+
 
 .. toctree::
    :maxdepth: 2

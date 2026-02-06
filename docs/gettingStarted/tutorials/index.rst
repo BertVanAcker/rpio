@@ -2,18 +2,16 @@ Tutorials and Examples
 ======================
 
 Examples
-----------------
+--------
 
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 1
 
-   helloworldExamples/helloworld
-   helloworldExamples/distributed-deployment
-
-
+    helloworldExamples/helloworld
+    helloworldExamples/distributed-deployment
 
 Beginner Tutorials
------------------
+------------------
 
 .. toctree::
    :maxdepth: 2
@@ -22,7 +20,7 @@ Beginner Tutorials
    CLI/Beginner-CLI-Tools
 
 Workflow Tutorials
------------------
+------------------
 
 .. toctree::
    :maxdepth: 2

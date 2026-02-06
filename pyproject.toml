@@ -63,7 +63,7 @@ doc = [
 [project.urls]
 source = "https://github.com/BertVanAcker/rpio"
 mirror = "https://git.rys.one/phd/robosapiens/rsio"
-Homepage = "https://rpio.readthedocs.io/en/latest/index.html"
+Homepage = "https://rpio.readthedocs.io/"
 
 [project.scripts]
 rpio = "rsio.__main__:main"

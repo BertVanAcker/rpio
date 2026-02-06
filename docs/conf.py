@@ -1,53 +1,75 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
+from datetime import datetime
 from pathlib import Path
 import sys
-sys.path.append(str(Path('..').resolve()))
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+sys.path.append(str(Path("..").resolve()))
 
-project = 'RoboSAPIENS IO Project'
-copyright = '2024, Sahar Nasimi Nezhad & Bert Van Acker'
-author = 'Sahar Nasimi Nezhad & Bert Van Acker'
-release = '0.1'
+html_favicon = "static/images/docs-logo.svg"
 
-# -- General configuration ---------------------------------------------------
+project = "RoboSAPIENS IO Project"
+ogp_site_name = project
+copyright = f"{datetime.now().year}"
+author = "Sahar Nasimi Nezhad, Bert Van Acker, Arkadiusz Ryś"
+release = "0.4.3"
 
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.autosummary'
+    "myst_parser",
+    "notfound.extension",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.autosummary",
+    "sphinx_rtd_theme",
+    "sphinx_search.extension",
+    "sphinx_tabs.tabs",
+    "sphinxext.opengraph",
+    # "sphinxcontrib.drawio",
+    "sphinx_toolbox.collapse",
 ]
+# autosectionlabel_prefix_document = True
+sphinx_tabs_nowarn = True
+templates_path = ["templates"]
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".txt": "markdown",
+    ".md": "markdown",
+}
+source_encoding = "utf-8-sig"
+master_doc = "index"
 
-# Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["templates"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+html_theme = "sphinx_rtd_theme"
+html_theme_options = {
+    "logo_only": True,
+    "collapse_navigation": False,
+}
+html_logo = html_favicon
+html_static_path = ["static"]
+htmlhelp_basename = project
+html_extra_path = ["robots.txt"]
+html_css_files = ["css/custom.css"]
+html_js_files = ["js/custom.js"]
+on_rtd = False
+html_title = project
+html_context = {"conf_py_path": "/"}
 
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
-# -- Options for HTML output -------------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
-html_theme = 'sphinx_rtd_theme'
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
-
-# Custom CSS files to include
-html_css_files = [
-    'css/custom.css',
-]
+notfound_context = {
+    "title": "Page not found",
+    "body": """
+        <h1>Page not found</h1>
+        <p>
+            Sorry, we couldn't find that page. It may have been renamed or removed
+            in the version of the documentation you're currently browsing.
+        </p>
+        <p>
+            If you're currently browsing the
+            <em>latest</em> version of the documentation, try browsing the
+            <a href="/en/stable/"><em>stable</em> version of the documentation</a>.
+        </p>
+        <p>
+            Alternatively, use the
+            <a href="#" onclick="$('#rtd-search-form [name=\\'q\\']').focus()">Search docs</a>
+            box on the left or <a href="/">go to the homepage</a>.
+        </p>
+    """,
+}
