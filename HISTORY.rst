@@ -10,10 +10,10 @@ robosapiensIO 1
 
 **robosapiensIO 1.x.x - ready for experimental use by users**
 
-1.0.0 (2024-??-??)
+1.0.0 (????-??-??)
 ~~~~~~~~~~~~~~~~~~
 
-* add main release notes
+* Add main release notes.
 
 robosapiensIO Preview
 ---------------------
@@ -22,11 +22,13 @@ robosapiensIO Preview
 
 0.5.1 (2025-mm-dd)
 ~~~~~~~~~~~~~~~~~~
+
 * Replace model2model transformations with robotransform.
 * Backport changes (0.4.2 and 0.4.3).
 
 0.5.0 (2025-04-21)
 ~~~~~~~~~~~~~~~~~~
+
 * Replace generic exit codes.
 * Fix typos.
 * Update release engineering.
@@ -39,15 +41,18 @@ robosapiensIO Preview
 
 0.4.3 (2025-07-28)
 ~~~~~~~~~~~~~~~~~~
+
 * Update logging on redis and add decorator for logging.
 
 0.4.2 (2025-07-25)
 ~~~~~~~~~~~~~~~~~~
+
 * Update node.
 * Add support for the node dependencies in the communication manager.
 
 0.4.0 (2025-04-16)
 ~~~~~~~~~~~~~~~~~~
+
 * Separate inter and intra component communication manager.
 * Add time-stamp to messages in communication and knowledge manager.
 * Add random unique-id in event messages.
