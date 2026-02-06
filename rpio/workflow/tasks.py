@@ -6,6 +6,9 @@
 # * RAP R&D concepts can not be copied and/or distributed without the express
 # * permission of Bert Van Acker
 # **********************************************************************************
+from pathlib import Path
+
+from robotransform import MapleKStore
 from rpio.transformations.transformations import swc2code_py, message2code_py, swc2launch, swc2main, swc2dockerCompose, update_robosapiensIO_ini, add_backbone_config, robochart2aadlmessages, robochart2logical
 from rpio.utils.auxiliary import *
 from rpio.parsers.parsers import *
@@ -136,19 +139,16 @@ def t_update_robosapiensIO_ini():
 
 def t_robochart_to_messages():
     try:
-        # Parse RoboChart models using the defined constants
-        parser = robochart_parser(
-            MAPLEK=MAPLE_RCT,
-            Monitor=MONITOR_RCT,
-            Analysis=ANALYSIS_RCT,
-            Plan=PLAN_RCT,
-            Legitimate=LEGITIMATE_RCT,
-            Execute=EXECUTE_RCT,
-            Knowledge=KNOWLEDGE_RCT
+        store = MapleKStore(
+            Path(MONITOR_RCT),
+            Path(ANALYSIS_RCT),
+            Path(PLAN_RCT),
+            Path(LEGITIMATE_RCT),
+            Path(EXECUTE_RCT),
+            Path(KNOWLEDGE_RCT),
+            (Path(MAPLE_RCT),)
         )
-        # generate messages, here DESIGN_DIR is used if it represents the design folder;
-        # alternatively
-        robochart2aadlmessages(maplek=parser.maplek_model, path=DESIGN_DIR)
+        robochart2aadlmessages(store, output_filepath=Path(DESIGN_DIR) / "messages.aadl")
         return True
     except:
         print("Failed to generate AADL messages from provided RoboChart models")
@@ -157,10 +157,16 @@ def t_robochart_to_messages():
 def t_robochart_to_logical():
     try:
         # Parse robochart models
-        models_parsed = robochart_parser(MAPLEK='../Concept/MAPLE-K.rct',Monitor='../Concept/Monitor.rct',Analysis='../Concept/Analysis.rct',Plan='../Concept/Plan.rct',Legitimate='../Concept/Legitimate.rct',Execute='../Concept/Execute.rct',Knowledge='../Concept/Knowledge.rct')
-        # generate logical architecture
-        robochart2logical(parsed=models_parsed,path='../Design')
-        print("RoboChart to AADL logical architecture is not implemented yet!")
+        store = MapleKStore(
+            Path('../Concept/Monitor.rct'),
+            Path('../Concept/Analysis.rct'),
+            Path('../Concept/Plan.rct'),
+            Path('../Concept/Legitimate.rct'),
+            Path('../Concept/Execute.rct'),
+            Path('../Concept/Knowledge.rct'),
+            (Path('../Concept/MAPLE-K.rct'),)
+        )
+        robochart2logical(store, output_filepath= Path('../Design') / "logical.aadl")
         return True
     except:
         print("Failed to generate AADL logical architecture from provided RoboChart models")
